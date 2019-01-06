@@ -1,0 +1,352 @@
+
+body{
+    color:black;
+    font-family:'Century Gothic';
+}
+a:hover{
+    cursor:pointer;
+}
+ul,ol{
+    margin:0;
+    padding:0;
+}
+/* 
+    welcome视图
+*/
+.main{
+    text-align:center;
+}
+.img_bck img{
+    position:relative;
+    z-index:-1;
+}
+.img_bck,.welcome{
+    width:1600px;
+    height:990px;
+}
+.welcome {
+    display: inline-block;
+    position:relative;
+    text-align:center;
+    color:#a2a099;
+    border-bottom:1px solid gainsboro;
+}
+.welcome .img_bck{
+    background-color:rgba(0, 0, 0, 0.7);
+}
+.welcome .item {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    width:970px;
+    height:580px;
+    margin:auto;
+}
+
+.welcome .item h1 {
+    font-weight:normal;
+    font-size:50px;
+    color:white;
+}
+
+.welcome .item form {
+    border:1px solid #51504d;
+    padding:0 20px 30px 20px;
+}
+
+form,input,a{
+    border-radius:2px;
+}
+.welcome .item input{
+   width:200px;
+   height:30px;
+   background-color:transparent;
+   color:white;
+   text-indent:10px;
+   border:1px solid #51504d;
+   padding:3px;
+}
+
+.welcome .item a {
+    font-size:10px;
+    padding:10px;
+    background-color:transparent;
+    color:white;
+    border:1px solid #51504d;
+}
+.welcome .item a:hover {
+    cursor:pointer;
+    color:black;
+    background-color:white;
+}
+
+/*
+    sections视图
+*/
+.sections {
+    height:710px;
+    text-align:center;
+}
+
+.sections .items {
+    width:1300px;
+    display:inline-block;
+    margin:128px 0;
+}
+
+.sections .item {
+    width:calc(50% - 150px);
+    height:105px;
+    float:left;
+    text-align:left;
+    margin:50px 0 0 150px;
+}
+
+.sections .item img {
+    float:left;
+    margin:40px 0 0 -70px;
+}
+
+/* 
+    information视图
+*/
+.information {
+    position:relative;
+    display: inline-block;
+    text-align:center;
+    color:white;
+}
+.information,.img_bck2 {
+    height:800px;
+}
+.img_bck2 img{
+    position:relative;
+    z-index: -1;
+}
+
+.img_bck2 {
+    display:inline-block;
+    background-color:rgba(0, 0, 0, 0.7);
+}
+.information .items{
+    position:absolute;
+    top:10%;
+    right:0;
+    text-align:left;
+    width: 80%;
+}
+
+.information .items img {
+    float:right;
+    border:1px solid gainsboro;
+    padding:50px 0 50px 50px;
+    border-radius:50px 0 0 50px;
+}
+
+.information .items p {
+    width:370px;
+    margin-bottom:40px;
+}
+.information .items h1 {
+    margin-top:100px;
+    width:370px;
+}
+
+
+
+.information .items span {
+    font-size:10px;
+    padding:15px;
+    background-color:transparent;
+    color:white;
+    border:1px solid #51504d;
+    border-radius:5px;
+}
+.information .items span:hover {
+    cursor:pointer;
+    color:black;
+    background-color:white;
+}
+
+
+
+/* 
+    products视图
+*/
+.products {
+    height:580px;
+    text-align:center;
+}
+
+.products .items {
+    width:1000px;
+    height:300px;
+    display:inline-block;
+    margin:140px 0; 
+}
+
+.products .items .item {
+    width:calc(33% - 20px);
+    margin:0 20px 0 0;
+    float:left;
+}
+
+.products h1 {
+    padding-top:30px;
+}
+
+/* 
+
+*/
+.a {
+    height:1000px;
+    text-align: center;
+}
+.leaves , .brid {
+    overflow: hidden;
+    text-align:left;
+}
+.a .leaves img{
+    float:left;
+    margin-right:30px;
+}
+.a .brid img {
+    float:right;
+    margin-left:30px;
+}
+.a .items{
+    width:990px;
+    display:inline-block;
+    margin:70px 0;
+}
+.a .items .item {
+    margin-bottom:80px;
+}
+
+/* 
+teachers视图
+*/
+.teachers {
+    height:1000px;
+    text-align:center;
+}
+.teachers .items {
+    width:970px;
+    display:inline-block;
+}
+.teachers .items div{
+    float:left;
+    width:calc(50% - 30px);
+    height:340px;
+    margin:30px 30px 0 0;
+    overflow: hidden;
+}
+.teachers .items img{
+    position:relative;
+    /* z-index: -1; */
+}
+
+.teachers .items .teacher_info:hover {
+    cursor:pointer;
+    background-color:rgba(0, 0, 0, 0.7);
+}
+
+.teachers .items .teacher_zhang{
+    background-image:url('../images/teacher_zhang.png');
+    display:table-cell;
+    vertical-align: middle;
+}
+
+.teachers .items .teacher_zhang .teacher_info{
+    width:100%;
+    margin-top:0px;
+}
+
+.teachers .items .teacher_zhang .teacher_info h6{
+    color:white;
+}
+.teachers .items .teacher_zhang .teacher_info p {
+    color:#7c7c7c;
+}
+
+.teachers .items .teacher_zhang img{
+    margin:10px;
+}
+
+/* 
+    registered视图
+*/
+.registered {
+    height:705px;
+    text-align: center;
+}
+
+.registered form {
+    float:left;
+    margin-right:15%;
+    border:1px solid #e7e7e7;
+    padding:50px;
+}
+.registered form > *{
+    margin-bottom:20px;
+}
+.registered form input{
+    width:370px;
+    height:49px;
+    border:1px solid #d4d3d3;
+}
+.registered form textarea{
+    width:370px;
+    border:1px solid #d4d3d3;
+    border-radius:5px;
+    /* 禁止textarea拉伸 */
+    resize:none;
+}
+.registered form a{
+    font-size:12px;
+    padding:10px 175px;
+    background-color:#141414;
+    font-weight:bold;
+    color:white;
+}
+
+.registered .items{
+    display:inline-block;
+}
+
+.registered .items .item{
+    text-align:left;
+}
+.registered .items .item img{
+    float:left;
+    margin:0 20px 0 0;
+}
+
+/* 
+    fotter视图
+ */
+ .fotter {
+     background-color:#141414;
+     height:411px;
+     text-align:center;
+ }
+ .fotter .items {
+     width:1170px;
+     margin:80px 0;
+     display:inline-block;
+ }
+ .fotter .items ul{
+     list-style-type:none;
+     float:left;
+     width:25%;
+     text-align:left;
+     line-height:50px;
+     color:#4e4e4e;
+ }
+
+ .fotter .items > ul li:first-of-type{
+     font-size:14px;
+     color:white;
+ }
